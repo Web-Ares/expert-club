@@ -1,0 +1,47 @@
+.expert{
+  padding: 14px;
+  margin-bottom: 25px;
+  border: 1px solid #f7f4e8;
+  border-radius: 5px;
+  background: #fff7da;
+  text-align: left;
+
+  &__pic{
+    float: left;
+    width: 256px;
+    height: 367px;
+    margin: 0 14px 14px 0;
+    border: 5px solid #ffdd5c;
+    border-radius: 5px;
+    background: center no-repeat;
+  }
+
+  &__name{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__link{
+    color: #8f8f8f;
+    text-decoration:none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #8f8f8f;
+    margin-bottom: 20px;
+
+     span{
+       color: #000;
+       text-transform: uppercase;
+     }
+  }
+
+
+}

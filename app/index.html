@@ -73,6 +73,78 @@
         <!-- promo -->
         <div class="promo">
 
+            <!-- promo__wrap -->
+            <div class="promo__wrap">
+
+                <!-- promo__form -->
+                <div class="promo__form">
+
+                    <!-- promo__form-title -->
+                    <h2 class="promo__form-title">Задать вопрос эксперту</h2>
+                    <!-- /promo__form-title -->
+
+                    <!-- promo__form-wrap -->
+                    <form class="promo__form-wrap" method="get" action="#" novalidate>
+
+                        <!-- promo__form-half -->
+                        <div class="promo__form-half">
+
+                            <select name="promo__form-heading" class="promo__form-heading">
+                                <option value="0">Выберите рубрику</option>
+                                <option value="1">Выберите рубрику 1</option>
+                                <option value="2">Выберите рубрику 2</option>
+                            </select>
+
+                            <select name="promo__form-heading"  class="promo__form-heading">
+                                <option value="0">Выберите эксперта</option>
+                                <option value="1">Выберите эксперта 1</option>
+                                <option value="2">Выберите эксперта 2</option>
+                            </select>
+
+                            <input type="text" name="promo__form-name" placeholder="Ваше имя"/>
+                            <input type="email" name="promo__form-email" placeholder="Ваш email"/>
+                            <input type="tel" name="promo__form-phone" placeholder="Ваш телефон"/>
+                            <input type="text" name="promo__form-age" placeholder="Возраст"/>
+
+                        </div>
+                        <!-- /promo__form-half -->
+
+                        <!-- promo__form-half -->
+                        <div class="promo__form-half">
+
+                            <textarea name="promo__form-question" placeholder="Ваш Вопрос"></textarea>
+
+                            <!-- promo__form-captcha -->
+                            <div class="promo__form-captcha">
+
+                                <input type="text" name="promo__form-code" placeholder="Введите код"/>
+
+                                <!-- promo__captcha -->
+                                <div class="promo__captcha">
+                                    <img src="pic/captcha.jpg" alt="img"/>
+                                </div>
+                                <!-- /promo__captcha -->
+
+                            </div>
+                            <!-- /promo__form-captcha -->
+
+                            <button type="submit" class="btn btn_3">задать вопрос</button>
+
+                        </div>
+                        <!-- /promo__form-half -->
+
+                    </form>
+                    <!-- /promo__form-wrap -->
+
+                </div>
+                <!-- /promo__form -->
+
+                <span class="promo-button-next"></span>
+                <span class="promo-button-prev"></span>
+
+            </div>
+            <!-- /promo__wrap -->
+
             <!-- swiper-container -->
             <div class="promo__swiper swiper-container">
 
@@ -84,26 +156,19 @@
 
                         <!-- promo__content -->
                         <div class="promo__content">
-                            патентное право
 
-                            Александр Носов
+                            <!-- promo__content-title -->
+                            <a href="#" class="promo__content-title">патентное право</a>
+                            <!-- /promo__content-title -->
 
-                            все эксперты
-                        </div>
-                        <!-- /promo__content -->
+                            <!-- promo__content-name -->
+                            <a href="#" class="promo__content-name">Александр Носов</a>
+                            <!-- /promo__content-name -->
 
-                    </div>
-                    <!-- /promo__item -->
+                            <!-- btn -->
+                            <a href="#" class="btn btn_4">все эксперты</a>
+                            <!-- /btn -->
 
-                    <!-- promo__item -->
-                    <div class="promo__item swiper-slide">
-                        <img src="pic/slide_001.png" alt="img"/>
-
-                        <!-- promo__content -->
-                        <div class="promo__content">
-                            Новая коллекция костюмных тканей
-                            <span class="promo__content-country">ИТАЛИЯ</span>
-                            <span class="promo__content-year">2016</span>
                         </div>
                         <!-- /promo__content -->
 
@@ -216,6 +281,12 @@
 
                 </div>
                 <!-- /news-aside -->
+
+                <!-- block -->
+                <div class="block">
+                    <img src="pic/banner-02.jpg" alt="img"/>
+                </div>
+                <!-- /block -->
 
             </aside>
             <!-- /site__aside -->
@@ -423,7 +494,11 @@
                 </section>
                 <!-- /last-questions -->
 
-                <a href="#" class="btn btn_1">все вопросы</a>
+                <!-- btn__wrap-right -->
+                <div class="btn__wrap-right">
+                    <a href="#" class="btn btn_2">все вопросы</a>
+                </div>
+                <!-- /btn__wrap-right -->
 
             </div>
             <!-- /site__wrap -->

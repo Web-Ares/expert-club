@@ -4,14 +4,20 @@
   vertical-align: top;
   box-sizing: border-box;
   position: relative;
-  width: 200px;
-  height: 22px;
-  border: 1px solid $websters-select-border;
+  width: 211px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 11px;
+  font-size: 14px;
+  color: #8f8f8f;
 
   &_opened {
 
-    .websters-select__arrow {
-      transform: rotate(180deg);
+    .websters-select__arrow:before {
+      top: 15px;
+      transform: rotate(225deg);
     }
 
   }
@@ -21,33 +27,25 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 20px;
+    width: 23px;
     transform-origin: center;
     -webkit-transition: -webkit-transform 200ms ease-in-out;
     transition: transform 200ms ease-in-out;
 
-    &:after,
-    &:before {
+    &:before{
       position: absolute;
-      top: 9px;
-      width: 10px;
-      height: 2px;
-      border-radius: 2px;
-      background: $websters-select-border;
+      top: 12px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-bottom: 1px solid #dbdbdb;
+      border-right: 1px solid #dbdbdb;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
       content: '';
+      @include duoEvent(transform, top);
     }
 
-    &:after {
-      left: 4px;
-      transform: rotate(70deg);
-
-    }
-
-    &:before {
-      right: 3px;
-      transform: rotate(-70deg);
-
-    }
   }
 
   &__item {
@@ -88,17 +86,21 @@
     position: absolute;
     z-index: 10;
     box-sizing: border-box;
-    border: 1px solid $websters-select-border;
+    border: none;
+    border-radius: 5px;
     background: $websters-select-popup-back;
+    @include main-font1;
 
     ul {
       z-index: 1;
     }
 
     li {
+      padding: 8px 10px;
       white-space: nowrap;
       overflow: hidden;
       cursor: pointer;
+      @include duoEvent(color, background);
 
       &:hover {
         color: $websters-select-popup-item-active-color;

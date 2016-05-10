@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   width: 1300px;
   margin: 0 auto 46px;
 }
@@ -7,8 +8,133 @@
   height: 352px;
   background-position: center;
   background-size: cover;
+  background-color: #8299a9;
+  opacity: 0!important;
+}
+.swiper-slide-active{
+  opacity: 1!important;
+}
+.promo-button-next,
+.promo-button-prev{
+  position: absolute;
+  top: 167px;
+  width: 30px;
+  height: 30px;
+  border-width: 5px;
+  border-color: rgba(0,0,0,.3);
+  z-index: 2;
+  @include oneEvent(border-color);
+  cursor: pointer;
+
+  &:hover{
+    border-color: #0095da;
+  }
+
+}
+.promo-button-next{
+  right: -18px;
+  border-top-style: solid;
+  border-right-style: solid;
+  transform: rotate(45deg);
+}
+.promo-button-prev{
+  left: -18px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  transform: rotate(45deg);
 }
 .promo__content{
   width: 970px;
-  padding: 0 15px;
+  margin: 0 auto;
+  padding: 93px 475px 0 262px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 47px;
+  text-align: left;
+}
+.promo__content-title{
+  display: block;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.promo__content-name{
+  display: block;
+  margin-bottom: 53px;
+  color: #000;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.promo__wrap{
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+}
+.promo__form{
+  position: absolute;
+  top: 32px;
+  right: 15px;
+  width: 455px;
+  height: 316px;
+  padding: 10px 13px 6px 13px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2;
+
+  input,
+  textarea{
+    width: 211px;
+    height: 33px;
+    margin-bottom: 11px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    @include main-font1;
+
+    &::-webkit-input-placeholder {
+      color: #8f8f8f;
+    }
+    &:-moz-placeholder {
+      color: #8f8f8f;
+    }
+    &.placeholder {
+      color: #8f8f8f;
+    }
+
+  }
+
+  textarea{
+    height: 165px;
+    margin-bottom: 9px;
+    padding: 8px 10px;
+  }
+
+}
+.promo__form-title{
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.promo__form-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.promo__form-half{
+  width: 211px;
+}
+.promo__form-captcha{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+
+  input{
+    width: 105px;
+    margin-bottom: 0;
+  }
+
 }

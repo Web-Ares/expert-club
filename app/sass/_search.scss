@@ -1,0 +1,42 @@
+.search {
+  position: absolute;
+  top: 25px;
+  right: 0;
+
+  &:before{
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    content: '';
+  }
+
+  &__text{
+    display: inline-block;
+    vertical-align: top;
+    height: 39px;
+    width: 233px;
+    margin-right: -3px;
+    padding-left: 33px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: -.5px;
+  }
+
+  &__btn{
+    display: inline-block;
+    vertical-align: top;
+    height: 39px;
+    width: 39px;
+    border: none;
+    border-radius: 3px;
+    background: url("../img/icon-find.png") no-repeat 13px 13px #ffcb08;
+  }
+
+}

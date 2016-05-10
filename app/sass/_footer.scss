@@ -1,0 +1,41 @@
+.footer__menu{
+  margin-bottom: 37px;
+  font-size: 14px;
+}
+.footer__menu-item{
+  color: #fff;
+  margin-right: 50px;
+  text-decoration: underline;
+}
+
+.footer__copyright{
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.footer__developer{
+  position: absolute;
+  top: 106px;
+  right: 17px;
+  font-size: 12px;
+  letter-spacing: .3px;
+
+  a{
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+
+}
+.footer__statistic{
+  position: absolute;
+  top: 55px;
+  right: 17px;
+}
+.footer__statistic-item{
+  margin-left: 10px;
+}

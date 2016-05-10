@@ -1,0 +1,56 @@
+.social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: absolute;
+  left: 277px;
+  top: 18px;
+  width: 79px;
+
+  &__item{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    background: url('../img/icons-social.png') no-repeat 0 0;
+    background-size: 65px 40px;
+    @include oneEvent(opacity);
+
+    &_tw{
+      background-position: 7px 8px;
+      background-color: #87e0ff;
+    }
+
+    &_gg{
+      background-position: -20px 8px;
+      background-color: #eea1a4;
+    }
+
+    &_fb{
+      background-position: -47px 8px;
+      background-color: #8faeda;
+    }
+
+    &_vk{
+      background-position: 7px -19px;
+      background-color: #6ba2c9;
+    }
+
+    &_email{
+      background-position: -20px -20px;
+      background-color: #74b9f5;
+    }
+
+    &_lj{
+      background-position: -47px -20px;
+      background-color: #7ba7d2;
+    }
+
+    &:hover{
+      opacity: .8;
+    }
+
+  }
+
+}

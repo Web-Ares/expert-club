@@ -1,5 +1,5 @@
 .expert{
-  padding: 14px;
+  padding: 14px 10px 14px 14px;
   margin-bottom: 25px;
   border: 1px solid #f7f4e8;
   border-radius: 5px;
@@ -15,26 +15,27 @@
     border-radius: 5px;
   }
 
-  &__link{
-    color: #8f8f8f;
-    text-decoration:none;
-
-    &:hover{
-      text-decoration: underline;
-    }
-  }
-
   p{
     font-size: 14px;
-    line-height: 16px;
+    line-height: 24px;
     color: #8f8f8f;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+    &:last-child{
+      margin-bottom: 3px;
+    }
 
      span{
        color: #000;
        text-transform: uppercase;
      }
   }
-
-
+}
+.expert h2{
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+.site__wrap p a.expert__link{
+  color: #8f8f8f;
+  text-decoration:none;
 }

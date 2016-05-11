@@ -7,9 +7,10 @@
 .last-questions__item{
   position: relative;
   padding: 9px 20px 19px 15px;
-  color: #8f8f8f;
-  font-size: 14px;
-  line-height: 24px;
+
+  p{
+    margin-bottom: 0;
+  }
 
   &:before {
     position: absolute;
@@ -31,7 +32,10 @@
 
 }
 .last-questions__title{
+  margin-bottom: 0;
   padding-left: 44px;
+  font-size: 18px;
+  color: #000;
 }
 .last-questions__title a{
   font-size: 18px;

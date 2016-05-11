@@ -1,9 +1,15 @@
 .application{
+  display: block;
   width: 100%;
   padding: 8px;
   margin-bottom: 25px;
   background: $paginator-back;
+  transition: opacity .3s ease;
+  -webkit-transition: opacity .3s ease;
 
+  &:hover{
+  opacity: 0.7;
+  }
   img{
     width: 100%;
     height: auto;

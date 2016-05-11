@@ -68,15 +68,15 @@ var Menu = function(obj) {
                         curMenu.slideDown( 300 );
                         curElem.addClass( 'open' );
                     }
-                    if ( event.stopPropagation ) {
+                    /*if ( event.stopPropagation ) {
                         event.stopPropagation();
                     } else {
                         event.cancelBubble = true;
-                    }
+                    }*/
                 }
             });
 
-            $('body').on( {
+            /*$('body').on( {
 
                 click: function(e) {
 
@@ -90,7 +90,7 @@ var Menu = function(obj) {
                         curElem.removeClass( 'open' );
                     }
                 }
-            });
+            });*/
 
         },
         _init = function() {

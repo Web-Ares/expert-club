@@ -102,6 +102,15 @@
 
   &_6{
     width: 255px;
+
+    &:after{
+      background: url('../img/icon-doc.png') no-repeat 11px 8px;
+    }
+
+    &:hover:after{
+      background-position: 11px 8px;
+    }
+
   }
 
 }

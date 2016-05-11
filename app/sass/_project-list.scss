@@ -18,8 +18,15 @@
 }
 .project__title{
   margin-bottom: 18px!important;
-}
-.project__title a{
-  color: #000;
-  text-decoration: underline;
+
+  a{
+    color: #000;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+
 }

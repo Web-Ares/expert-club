@@ -1,11 +1,12 @@
-.breadcrumps {
-  padding: 38px 2px 22px;
-  font-size: 14px;
-  color: #8f8f8f;
+.bread-crumbs {
   width: 640px;
-  margin-left: -2px;
+  margin: -4px 0 15px -2px;
+  padding: 0 2px;
+  color: #8f8f8f;
+  font-size: 14px;
+  line-height: 1;
 
-  & a {
+  &__item {
   position: relative;
   margin-right: 17px;
   color: #0095da;
@@ -22,4 +23,5 @@
       text-decoration: none;
     }
   }
+
 }

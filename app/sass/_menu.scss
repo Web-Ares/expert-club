@@ -19,15 +19,28 @@
   text-shadow: 1px 1px 1px rgba(0,0,0,.3);
   transition: background-color .3s ease, border-radius .3s ease, border-left-color .3s ease;
 
-  &.active,
   &:hover{
     border-left-color: transparent;
     border-radius: 5px;
     background-color: $menu-item-hover;
   }
 
-  &.active + .menu__item,
   &:hover + .menu__item{
+    border-left-color: transparent;
+  }
+
+  &.active{
+    border: 1px solid #fff!important;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: transparent;
+      cursor: default;
+    }
+
+  }
+
+  &.active + .menu__item{
     border-left-color: transparent;
   }
 

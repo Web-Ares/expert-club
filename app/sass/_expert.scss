@@ -6,22 +6,15 @@
   background: #fff7da;
   text-align: left;
 
-  &__pic{
+  img{
     float: left;
-    width: 256px;
-    height: 367px;
+    max-width: 256px;
+    max-height: 367px;
     margin: 0 14px 14px 0;
     border: 5px solid #ffdd5c;
     border-radius: 5px;
-    background: center no-repeat;
   }
 
-  &__name{
-    display: inline-block;
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 18px;
-  }
   &__link{
     color: #8f8f8f;
     text-decoration:none;

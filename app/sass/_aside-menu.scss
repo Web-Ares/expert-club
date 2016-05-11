@@ -1,0 +1,24 @@
+.aside-menu{
+  margin-bottom: 23px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.aside-menu__wrap{
+  padding: 10px;
+}
+
+a.aside-menu__link{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: $aside-menu__link;
+  text-decoration: underline;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+.aside-menu__sub{
+  padding-left: 10px;
+}

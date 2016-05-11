@@ -85,12 +85,6 @@
     }
 
   }
-
-}
-
-.btn__wrap-right{
-  display: flex;
-  justify-content: flex-end;
   &_5 {
     display: block;
     width: 188px;
@@ -107,6 +101,10 @@
     &:hover{
       background: #ffcb08;
       opacity: 0.7;
+    }
+
+    &:after{
+      display: none;
     }
 
     span{
@@ -129,4 +127,9 @@
     }
   }
 
+}
+
+.btn__wrap-right{
+  display: flex;
+  justify-content: flex-end;
 }

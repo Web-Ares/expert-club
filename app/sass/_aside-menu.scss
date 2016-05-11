@@ -1,17 +1,24 @@
 .aside-menu{
-  margin-bottom: 23px;
+  margin-bottom: 33px;
   border: 1px solid #d7d7d7;
   border-radius: 5px;
   overflow: hidden;
+  text-align: left;
 }
 .aside-menu__wrap{
-  padding: 10px;
+  padding: 10px 12px 12px 15px;
 }
-
+.aside-menu .site__title{
+  height: 22px;
+  padding-top: 3px;
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 a.aside-menu__link{
   display: inline-block;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
   color: $aside-menu__link;
   text-decoration: underline;
 
@@ -19,6 +26,21 @@ a.aside-menu__link{
     text-decoration: none;
   }
 }
+span.aside-menu__link{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  color: $aside-menu__link;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+.open span.aside-menu__link{
+  text-decoration: none;
+}
 .aside-menu__sub{
-  padding-left: 10px;
+  padding-left: 12px;
 }

@@ -1,6 +1,8 @@
 .promo {
   position: relative;
-  width: 1300px;
+  width: 100%;
+  min-width: 970px;
+  max-width: 1300px;
   margin: -53px auto 46px;
 }
 .promo__item{

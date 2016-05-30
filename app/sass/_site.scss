@@ -3,6 +3,8 @@
   @include main-font1;
   position: relative;
   min-height: 100%;
+  min-width: 970px;
+  overflow: hidden;
 
   &:after{
     display: block;

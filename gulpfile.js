@@ -97,7 +97,7 @@ gulp.task( 'scripts', function () {
         gulp.src( paths.scripts[ i ].contains )
             .pipe(sourcemaps.init())
             // .pipe(babel({presets: ['es2015']})) //for js6
-            .pipe(uglify())
+            //.pipe(uglify())
             .pipe(concat(paths.scripts[ i ].dist))
             .pipe(sourcemaps.write())
             .pipe(gulp.dest('dist/js/'));

@@ -6,7 +6,11 @@ $( function(){
         new Sliders ( $( this ) );
     } );
 
-    $( '.aside-menu__wrap' ).each( function() {
+    $.each( $( '.project__item' ), function() {
+        Project ( $( this ) );
+    } );
+
+    $.each( $( '.aside-menu__wrap' ), function() {
         Menu( $( this ) );
     });
 
@@ -97,6 +101,44 @@ var Menu = function(obj) {
 
 
             _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
+
+var Project = function(obj) {
+
+    //private properties
+    var _obj = obj,
+        _btn = _obj.find( '.btn');
+
+    //private methods
+    var _initEvents = function() {
+
+            _btn.on( {
+                click: function() {
+                    var curElem = $( this ),
+                        curMenu = curElem.parent().find( '.project__list' );
+
+                    if( curMenu.is( ':visible' ) ) {
+                        curMenu.slideUp( 300 );
+                        curElem.html( 'посмотреть публикации' );
+                    }
+                    else{
+                        curMenu.slideDown( 300 );
+                        curElem.html( 'скрыть публикации' );
+                    }
+                    return false;
+                }
+            });
+
+        },
+        _init = function() {
+            _initEvents();
         };
 
     //public properties

@@ -28,7 +28,7 @@
   &__wrap {
     position: relative;
     z-index: 2;
-    width: 527px;
+    width: 473px;
     margin: 0 auto;
     padding-bottom: 40px;
   }
@@ -36,34 +36,39 @@
   &__content {
     display: none;
     text-align: left;
-    padding: 20px 0;
   }
 
   &__close {
     position: absolute;
-    top: 17px;
-    width: 15px;
-    height: 15px;
-    right: 18px;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffcb08;
     text-indent: -5000px;
     cursor: pointer;
+    @include oneEvent(opacity);
+    z-index: 3;
 
     &:after,
     &:before {
       position: absolute;
       top: 50%;
-      left: 0;
-      right: 0;
+      left: 10px;
+      right: 10px;
       height: 3px;
       background: $popup-close-back;
       transform-origin: center;
       content: '';
+      box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     }
+
     &:after{
-      transform: translateY( 50% ) rotate( 45deg );
+      transform: translateY( -50% ) rotate( 45deg );
     }
     &:before {
-      transform: translateY( 50% ) rotate( -45deg );
+      transform: translateY( -50% ) rotate( -45deg );
     }
 
     &:hover {

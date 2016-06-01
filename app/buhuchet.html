@@ -110,7 +110,7 @@
             <!-- ask-question -->
             <div class="ask-question">
 
-                <a class="btn btn_5" href="#">задать вопрос</a>
+                <a class="btn btn_5 popup__open" data-popup="question" href="#">задать вопрос</a>
 
                 <span class="ask-question__expert">Вопросы к эксперту</span>
 
@@ -360,10 +360,98 @@
     </div>
     <!-- /site__footer -->
 
+    <!-- popup -->
+    <div class="popup">
+
+        <!-- popup__wrap -->
+        <div class="popup__wrap">
+
+            <!-- popup__content -->
+            <div class="popup__content popup__question">
+
+                <!-- popup__close -->
+                <div class="popup__close">
+
+                </div>
+                <!-- /popup__close -->
+
+                <!-- promo__form -->
+                <div class="promo__form promo__form_2">
+
+                    <!-- promo__form-title -->
+                    <h2 class="promo__form-title">Задать вопрос эксперту</h2>
+                    <!-- /promo__form-title -->
+
+                    <!-- promo__form-wrap -->
+                    <form class="promo__form-wrap" method="get" action="#" novalidate>
+
+                        <!-- promo__form-half -->
+                        <div class="promo__form-half">
+
+                            <select name="promo__form-heading" class="promo__form-heading">
+                                <option value="0">Выберите рубрику</option>
+                                <option value="1">Выберите рубрику 1</option>
+                                <option value="2">Выберите рубрику 2</option>
+                            </select>
+
+                            <select name="promo__form-heading"  class="promo__form-heading">
+                                <option value="0">Выберите эксперта</option>
+                                <option value="1">Выберите эксперта 1</option>
+                                <option value="2">Выберите эксперта 2</option>
+                            </select>
+
+                            <input type="text" name="promo__form-name" placeholder="Ваше имя"/>
+                            <input type="email" name="promo__form-email" placeholder="Ваш email"/>
+                            <input type="tel" name="promo__form-phone" placeholder="Ваш телефон"/>
+                            <input type="text" name="promo__form-age" placeholder="Возраст"/>
+
+                        </div>
+                        <!-- /promo__form-half -->
+
+                        <!-- promo__form-half -->
+                        <div class="promo__form-half">
+
+                            <textarea name="promo__form-question" placeholder="Ваш Вопрос"></textarea>
+
+                            <!-- promo__form-captcha -->
+                            <div class="promo__form-captcha">
+
+                                <input type="text" name="promo__form-code" placeholder="Введите код"/>
+
+                                <!-- promo__captcha -->
+                                <div class="promo__captcha">
+                                    <img src="pic/captcha.jpg" alt="img"/>
+                                </div>
+                                <!-- /promo__captcha -->
+
+                            </div>
+                            <!-- /promo__form-captcha -->
+
+                            <button type="submit" class="btn btn_3">задать вопрос</button>
+
+                        </div>
+                        <!-- /promo__form-half -->
+
+                    </form>
+                    <!-- /promo__form-wrap -->
+
+                </div>
+                <!-- /promo__form -->
+
+            </div>
+            <!-- /popup__content -->
+
+        </div>
+        <!-- /popup__wrap -->
+
+    </div>
+    <!-- /popup -->
+
 </div>
 <!-- /site -->
 
 <script src="js/vendors/jquery-2.2.1.min.js"></script>
 <script src="js/index.min.js"></script>
+
 </body>
 </html>

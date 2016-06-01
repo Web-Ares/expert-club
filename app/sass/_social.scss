@@ -1,14 +1,28 @@
 .social {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  position: absolute;
-  left: 277px;
-  top: 18px;
-  width: 79px;
+
+  &_head{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: absolute;
+    left: 277px;
+    top: 18px;
+    width: 79px;
+  }
+
+  &_article{
+    padding: 5px 6px 3px 10px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+  }
+
+  &__topic{
+    margin-right: 10px;
+  }
 
   &__item{
     display: inline-block;
+    vertical-align: middle;
     width: 25px;
     height: 25px;
     margin-bottom: 2px;

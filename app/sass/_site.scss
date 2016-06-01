@@ -58,6 +58,11 @@
     letter-spacing: .3px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
     background-color: #0095da;
+
+    &_2{
+      border-radius: 5px;
+    }
+
   }
 
   &__wrap{
@@ -175,6 +180,28 @@
 
       }
 
+    }
+
+    .alignleft {
+      float: left;
+      margin: 6px 20px 5px 0;
+    }
+
+    .aligncenter {
+      display: block;
+      margin: 0 auto 5px;
+      max-width: 100%;
+    }
+
+    .alignright {
+      float: right;
+      margin: 6px 0 5px 20px;
+    }
+
+    .alignnone {
+      display: block;
+      width: 100%;
+      margin: 6px 0 5px;
     }
 
   }
